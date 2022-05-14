@@ -10,6 +10,8 @@ The project consists of 4 contracts deployed and swapped with each other.
 - Using Authentication, Storing User information, and also creating a DB to store Coins (USDC, DOGE, LINK, DAI).
 - Use the Coinmarket Cap API to get prices and more information.
 
+Test Site: https://bonx-coinmarket.netlify.app/
+
 
 <img width="1440" alt="image" src="https://user-images.githubusercontent.com/24545141/168441067-240948ab-5e2a-41ca-86fd-2362d4879304.png">
 <img width="1436" alt="image" src="https://user-images.githubusercontent.com/24545141/168441201-c4014e07-d845-4706-9eda-d82338db797d.png">
