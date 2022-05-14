@@ -22,7 +22,7 @@ export const CoinMarketProvider = ({ children }) => {
     error,
     isLoading: loadingCoins,
   } = useMoralisQuery("Coins");
-
+  console.log(coins);
   const [currentAccount, setCurrentAccount] = useState("");
   const [openBuyCryptoModal, setOpenBuyCryptoModal] = useState(false);
   const [fromToken, setFromToken] = useState("ETH");
@@ -38,21 +38,21 @@ export const CoinMarketProvider = ({ children }) => {
 
   const getContractAddress = () => {
     if (fromToken === "Dai") return daiAddress;
-    if (fromToken === "Dogecoin") return dogeAddress;
+    if (fromToken === "DogeCoin") return dogeAddress;
     if (fromToken === "Link") return linkAddress;
     if (fromToken === "Usdc") return usdcAddress;
   };
 
   const getToAddress = () => {
     if (toToken === "Dai") return daiAddress;
-    if (toToken === "Dogecoin") return dogeAddress;
+    if (toToken === "DogeCoin") return dogeAddress;
     if (toToken === "Link") return linkAddress;
     if (toToken === "Usdc") return usdcAddress;
   };
 
   const getToAbi = () => {
     if (toToken === "Dai") return daiAbi;
-    if (toToken === "Dogecoin") return dogeAbi;
+    if (toToken === "DogeCoin") return dogeAbi;
     if (toToken === "Link") return linkAbi;
     if (toToken === "Usdc") return usdcAbi;
   };
