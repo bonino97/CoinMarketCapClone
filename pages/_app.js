@@ -1,13 +1,17 @@
-import '../styles/globals.css'
-import { MoralisProvider } from 'react-moralis'
-import { GunProvider } from '../context/gunContext'
-import { CoinMarketProvider } from '../context/context'
+import "../styles/globals.css";
+import { MoralisProvider } from "react-moralis";
+import { GunProvider } from "../context/gunContext";
+import { CoinMarketProvider } from "../context/context";
 
 function MyApp({ Component, pageProps }) {
+  console.log(
+    "serverUrl = " + process.env.NEXT_PUBLIC_SERVER,
+    "appId = " + process.env.NEXT_PUBLIC_APP_ID
+  );
   return (
     <MoralisProvider
-      serverUrl='https://gqasdf4tkkiu.usemoralis.com:2053/server'
-      appId='TL0YJzCoVXgYv0fMKfzmgD52UaoaMllZI1DxTJWJ'
+      serverUrl={process.env.NEXT_PUBLIC_SERVER}
+      appId={process.env.NEXT_PUBLIC_APP_ID}
     >
       <GunProvider>
         <CoinMarketProvider>
@@ -15,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         </CoinMarketProvider>
       </GunProvider>
     </MoralisProvider>
-  )
+  );
 }
 
-export default MyApp
+export default MyApp;

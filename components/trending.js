@@ -3,6 +3,7 @@ import Rate from "./cmc-table/rate"
 import fire from "../assets/fire.png"
 import btc from "../assets/btc.png"
 import usdt from "../assets/usdt.png"
+import eth from "../assets/eth.png"
 import gainers from "../assets/gainers.png"
 import recent from "../assets/recent.png"
 import TrendingCard from "./trendingCard"
@@ -33,12 +34,12 @@ const Trending = () => {
             isIncrement: false,
             rate: "9.32%"
         }, {
-            number: 1,
-            symbol: "BTC",
-            name: "Bitcoin",
-            icon: btc,
+            number: 3,
+            symbol: "ETH",
+            name: "Ethereum",
+            icon: eth,
             isIncrement: true,
-            rate: "2.34%"
+            rate: "5.76%"
         },
     ]
 
