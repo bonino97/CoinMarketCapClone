@@ -1,4 +1,4 @@
-import { client } from "../../lib/client";
+// import { client } from "../../lib/client";
 
 export default createUser = async (req, res) => {
   const { userAddress } = req.body;
@@ -11,7 +11,7 @@ export default createUser = async (req, res) => {
   };
 
   try {
-    await client.createIfNotExists(userDoc);
+    // await client.createIfNotExists(userDoc);
 
     res.status(200).send("Successful");
   } catch (error) {

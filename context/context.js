@@ -22,12 +22,13 @@ export const CoinMarketProvider = ({ children }) => {
     error,
     isLoading: loadingCoins,
   } = useMoralisQuery("Coins");
-  console.log(coins);
   const [currentAccount, setCurrentAccount] = useState("");
   const [openBuyCryptoModal, setOpenBuyCryptoModal] = useState(false);
   const [fromToken, setFromToken] = useState("ETH");
   const [toToken, setToToken] = useState("");
   const [amount, setAmount] = useState("");
+
+  console.log(amount);
 
   useEffect(() => {
     if (isAuthenticated) {
